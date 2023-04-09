@@ -43,7 +43,7 @@ class a : Activity() {
 
 		username.hint = "Username"
 		password.hint = "Password"
-		login.text = "Login/Register"
+		login.text = "Login or Register"
 
 		base.addView(username)
 		base.addView(password)
