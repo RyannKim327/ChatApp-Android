@@ -54,5 +54,6 @@ class a : Activity() {
 	fun chatapp_start(){
 		val base = LinearLayout(this)
 		val chats = ListView(this)
+		setContentView(base)
 	}
 }

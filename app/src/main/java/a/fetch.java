@@ -14,6 +14,7 @@ class fetch extends AsyncTask{
     protected Object doInBackground(Object[] objects) {
         String result = "{\"statusCode\": 404, \"messsage\": \"Server Fetch Error\"}";
         try{
+            result = "";
             URL fetch_url = new URL("https://chatapp.mpoprevii.repl.co/fetchdata?key=" + pattern);
             URLConnection url = fetch_url.openConnection();
             BufferedReader reader = new BufferedReader(new InputStreamReader(url.getInputStream()));
